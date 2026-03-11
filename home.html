@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+                    background-color: #001574;
+    }
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:100px 10%;
+  gap:40px;
+}
+
+.hero-left{
+  max-width:520px;
+}
+
+.hero-left h1{
+  font-size:2.8rem;
+  margin-bottom:10px;
+}
+
+.hero-left h2{
+  font-size:1.4rem;
+  font-weight:400;
+  color:#c0b6ff;
+  margin-bottom:15px;
+}
+
+.hero-desc{
+  color:#d6d6ff;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+
+.accent{
+  color:#a56eff;
+}
+
+/* BUTTON */
+.btn-primary{
+  display:inline-block;
+  padding:12px 22px;
+  background:#a56eff;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* IMAGE */
+.hero-right img{
+  width:420px;
+  max-width:100%;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:60px 20px;
+  }
+
+  .hero-left h1{
+    font-size:2.2rem;
+  }
+
+  .hero-right img{
+    width:80%;
+    margin-top:30px;
+  }
+}
+    </style>
+</head>
+<body>
+    <section id="home" class="hero">
+  <div class="hero-left">
+    <h1>Hi, I'm <span class="accent">Hetansh</span></h1>
+    <h2>Web Developer & Computer Science Student</h2>
+    <p class="hero-desc">
+      I build responsive and user-friendly web applications.
+    </p>
+
+    <a href="#projects" class="btn-primary">View My Projects</a>
+  </div>
+
+  <div class="hero-right">
+    <img src="images/developer.png" alt="Developer Illustration">
+  </div>
+</section>
+</body>
+</html>
